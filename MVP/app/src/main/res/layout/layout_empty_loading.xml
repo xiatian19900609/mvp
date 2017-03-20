@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/pb_loading"
+        style="@style/SpinKitView.Large.Circle"
+        app:SpinKit_Color="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp" />
+    <TextView
+        android:id="@+id/tv_net_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_not_network"
+        android:gravity="center"
+        android:text="网络异常，点击重试"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+</FrameLayout>
